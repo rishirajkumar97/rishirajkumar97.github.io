@@ -1,81 +1,47 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Homeostatic Plasticity in Cortical Microcircuits</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2">
+  <meta name="description" content="Rishi J's MSc research into homeostatic plasticity in spiking neural networks and cortical microcircuits.">
+  <title>Homeostatic Plasticity — Rishi J</title>
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Personal - v2.2.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="../assets/css/project.css" rel="stylesheet">
+  <script>
+    // Apply the saved theme before first paint to avoid a light flash.
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+      } catch (error) {
+        document.documentElement.dataset.theme = "light";
+      }
+    })();
+  </script>
+  <script src="../assets/js/main.js" defer></script>
 </head>
-
-<body data-gr-c-s-loaded="true">
-
-<!-- ======= Portfolio Details ======= -->
-  <main id="main">
-    <div id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-12 portfolio-info">
-            <br>
-            <h2 style="color:#12d640">Homeostatic Plasticity in Cortical Microcircuits</h2>
-
-            <ul>
-              <li><strong>Tech Stack</strong>: Python, NEST, numpy, pandas, matplotlib, Bash</li>
-            </ul>
-
-            <p>
-             The project involves exploring the effect of homeostatic plasticity mechanisms in the Potjan-Diesmann cortical microcircuit. The project aim is to achieve our desirable spike rates across the layers which can be configured by the user, but to achieve it by itself by self adjustment factor. This is a novel research project for which the conference paper is under progress. The Applications of this research are wide as it would enable us to theoretically develop a SNN for commercial purposes.            
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </div><!-- End Portfolio Details -->
-  </main><!-- End #main -->
-
- <!-- Vendor JS Files -->
-  <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="../assets/vendor/counterup/counterup.min.js"></script>
-  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/venobox/venobox.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
-
-  <script>if( window.self == window.top ) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
-
+<body>
+  <a class="skip-link" href="#project-content">Skip to project</a>
+  <header class="site-header"><div class="shell nav-shell"><a class="brand" href="../index.html" aria-label="Rishi J, back to portfolio"><span class="brand-mark" aria-hidden="true">rj.</span><span class="brand-name">Rishi J</span></a><div class="nav-actions"><button class="theme-toggle" type="button" aria-label="Switch to dark theme" data-theme-toggle>
+        <i class="bx bx-sun icon-sun" aria-hidden="true"></i>
+        <i class="bx bx-moon icon-moon" aria-hidden="true"></i>
+      </button><a class="button button-small" href="../index.html#work"><i class="bx bx-left-arrow-alt" aria-hidden="true"></i> <span class="back-label">Back to selected work</span></a></div></div></header>
+  <main class="project-page" id="project-content">
+    <div class="shell project-breadcrumb"><a href="../index.html">Portfolio</a><i class="bx bx-chevron-right" aria-hidden="true"></i><a href="../index.html#work">Selected work</a><i class="bx bx-chevron-right" aria-hidden="true"></i><span>Research</span></div>
+    <article class="shell project-article">
+      <header class="project-hero"><p class="eyebrow">Research · MSc thesis</p><h1>Homeostatic plasticity<br>in <em>cortical microcircuits.</em></h1><p class="project-deck">Exploring how a biologically inspired network can regulate its own activity—moving from fixed neural behaviour towards adaptive, stable computation.</p><ul class="tag-list" aria-label="Technologies"><li>Python</li><li>NEST</li><li>NumPy</li><li>pandas</li><li>Matplotlib</li><li>Bash</li></ul></header>
+      <figure class="project-hero-image"><img src="../assets/img/project/brain.jpeg" alt="Abstract brain illustration representing computational neuroscience" width="1600" height="900"><figcaption>Computational neuroscience · Spiking neural networks · Homeostatic plasticity</figcaption></figure>
+      <div class="project-body"><aside class="project-aside"><p class="eyebrow">Project context</p><dl><div><dt>Field</dt><dd>Computational neuroscience</dd></div><div><dt>Focus</dt><dd>Homeostatic plasticity</dd></div><div><dt>Model</dt><dd>Potjans–Diesmann microcircuit</dd></div><div><dt>Setting</dt><dd>MSc Data Science, University of Surrey</dd></div></dl><a class="text-link" href="../index.html#education">My education <i class="bx bx-arrow-up-right" aria-hidden="true"></i></a></aside><div class="project-narrative"><section><p class="project-section-number">01 / The question</p><h2>Can a network find its own balance?</h2><p>Biological neural networks maintain useful activity despite constantly changing conditions. This project investigated whether homeostatic plasticity could bring that same self-regulating behaviour to a computational cortical microcircuit.</p><p>The goal was to explore mechanisms that guide firing rates towards configurable targets through local adjustment, rather than relying entirely on externally fixed parameters.</p></section><section><p class="project-section-number">02 / The approach</p><h2>Model, perturb, observe.</h2><p>Using the Potjans–Diesmann cortical microcircuit as a foundation, I built and ran computational experiments in NEST. Python, NumPy, pandas, and Matplotlib supported the experiment workflow and analysis of spike-rate dynamics across network populations.</p><p>The work focused on how homeostatic adjustments influence network stability and activity over time, connecting a neuroscience hypothesis with a reproducible computational investigation.</p></section><section><p class="project-section-number">03 / Why it matters</p><h2>Learning from adaptive systems.</h2><p>Homeostatic mechanisms offer a compelling direction for spiking neural networks: systems that can adapt while preserving stable behaviour. This research strengthened my interest in the intersection of neuroscience, machine learning, and resilient system design.</p><p>The project was conducted as academic research; it does not claim a production-ready learning rule or clinical application.</p></section></div></div>
+    </article>
+    <nav class="shell project-next" aria-label="More projects"><div><p class="eyebrow">Keep exploring</p><h2>A different problem.<br><em>The same curiosity.</em></h2></div><a class="button button-primary" href="cloud.html">Next project <i class="bx bx-right-arrow-alt" aria-hidden="true"></i></a></nav>
+  </main>
+  <footer class="project-footer"><div class="shell site-footer"><a class="footer-brand" href="../index.html">rj.</a><p>Designed with intention. Built with curiosity.</p><a class="back-to-top" href="../index.html">Back to portfolio <i class="bx bx-arrow-up-right" aria-hidden="true"></i></a></div></footer>
 </body>
 </html>
-

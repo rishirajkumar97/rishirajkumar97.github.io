@@ -1,0 +1,216 @@
+/* Shared editorial treatment for static project pages. */
+
+.project-page {
+  padding-top: 2rem;
+}
+
+.project-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+  color: var(--muted-faint);
+  font-size: 0.7rem;
+}
+
+.project-breadcrumb a:hover {
+  color: var(--accent);
+}
+
+.project-breadcrumb span {
+  color: var(--accent);
+}
+
+.project-hero {
+  max-width: 58rem;
+  margin-bottom: 3rem;
+}
+
+.project-hero h1 {
+  margin-bottom: 1.75rem;
+  font-family: var(--serif);
+  font-size: clamp(3.5rem, 7vw, 6.4rem);
+  letter-spacing: -0.045em;
+}
+
+.project-hero h1 em,
+.project-next h2 em {
+  color: var(--accent);
+  font-weight: 400;
+}
+
+.project-deck {
+  max-width: 42rem;
+  margin-bottom: 1.75rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.project-hero-image {
+  margin: 0 0 clamp(3.5rem, 7vw, 6rem);
+}
+
+.project-hero-image img {
+  width: 100%;
+  max-height: 37rem;
+  border-radius: var(--radius);
+  aspect-ratio: 2;
+  object-fit: cover;
+  filter: saturate(0.7);
+}
+
+.project-hero-image figcaption {
+  margin-top: 0.85rem;
+  color: var(--muted-faint);
+  font-size: 0.68rem;
+}
+
+.project-body {
+  display: grid;
+  align-items: start;
+  gap: clamp(3rem, 9vw, 8rem);
+  grid-template-columns: 15rem minmax(0, 1fr);
+}
+
+.project-aside {
+  position: sticky;
+  top: 7rem;
+}
+
+.project-aside dl {
+  margin: 0 0 1.75rem;
+}
+
+.project-aside dl > div {
+  border-top: 1px solid var(--line);
+  padding: 0.85rem 0;
+}
+
+.project-aside dt {
+  margin-bottom: 0.15rem;
+  color: var(--muted-faint);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.project-aside dd {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.77rem;
+  line-height: 1.65;
+}
+
+.project-aside .button {
+  font-size: 0.75rem;
+}
+
+.project-narrative {
+  max-width: 43rem;
+}
+
+.project-narrative section {
+  margin-bottom: 3.5rem;
+}
+
+.project-section-number {
+  margin-bottom: 0.85rem;
+  color: var(--muted);
+  font-size: 0.67rem;
+  font-weight: 550;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.project-narrative h2 {
+  margin-bottom: 1.25rem;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.025em;
+}
+
+.project-narrative section > p:not(.project-section-number) {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.95;
+}
+
+.project-next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--line);
+  padding-block: 3rem clamp(4rem, 7vw, 6rem);
+}
+
+.project-next .eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.project-next h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  letter-spacing: -0.03em;
+}
+
+.project-next .button {
+  flex-shrink: 0;
+}
+
+.project-footer {
+  background: var(--contact-bg);
+  color: var(--on-dark);
+}
+
+@media (max-width: 800px) {
+  .project-body {
+    gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  .project-aside {
+    position: static;
+  }
+
+  .project-aside dl {
+    display: grid;
+    gap: 0 1.25rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-narrative {
+    max-width: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .project-page > .nav-shell .brand-name {
+    display: none;
+  }
+
+  .project-breadcrumb {
+    font-size: 0.62rem;
+  }
+
+  .project-deck {
+    font-size: 0.92rem;
+  }
+
+  .project-hero-image img {
+    aspect-ratio: 1.3;
+  }
+
+  .project-hero-image figcaption {
+    line-height: 1.6;
+  }
+
+  .project-next {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
